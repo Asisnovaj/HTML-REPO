@@ -1,0 +1,104 @@
+FORMS
+
+<forms action="" method="">
+
+</forms>
+
+-has two attributes action and method
+method = "get" or "post"
+-post is used to send data to the database or anywhere
+
+-get is used to receive data from the database 
+
+action = "home.html"
+
+- it is used to navigate to next destination
+
+INPUT TAG - 
+
+<label for ="fname" > FIRST NAME </label>
+<input type = "" name = "" class = "" required>
+
+input tag - used to get data from user
+
+type - used to specify the data type of the input
+
+name - used to reprsent the received data like a variable to the input
+
+class - used to represent a group of tags or blocks
+
+required - used to make mandatory field
+ 
+diabled - disable the access to the field
+
+value - gives defaul value
+
+placeholder - act as an hint
+
+readonly - makes the field un editable
+
+maxlenght - set the max length
+
+minlength - set the min length
+
+
+type = "" --> text, number, email, password, checkbox, radiobutton, submit, reset, time, date, month, datetime-local, file, url, textarea, tel, image, hidden
+  
+<button>submit</button>
+
+
+CODE FOR FORMS 
+
+<!-- FORMS -->
+    <form action = "" method="post">
+
+        <label for="fname">FIRST NAME</label>
+        <!-- <input type="text" placeholder="Enter your first name" value="Asis" readonly disabled> -->
+        <pre>
+            <label for="fname">FIRST NAME</label>: <input type="text" name="fname" placeholder="ENTER YOUR NAME" required>
+             
+            <label for="age">AGE</label>:          <input type="number" name="age">
+
+            <label for="email">EMAIL</label>:      <input type="email" name="email">
+            
+            <label for="password">password</label>: <input type="password" name="password">
+
+            <label for="dob">DOB</label>:          <input type="date" name="dob">
+
+            <label for="time">TIME</label>:          <input type="time" name="time">
+            
+            <label for="DATE-TIME">DATE-TIME</label>:          <input type="datetime-local" name="DATE-TIME">
+
+            <label for="FILE">FILE</label>:          <input type="file" name="FILE">
+            
+            <label for="URL">URL</label>:          <input type="url" name="URL">
+
+            <label for="rd1">GENDER</label>:          
+                                        <input type="radio" name="rd1" checked> male
+                                        <input type="radio" name="rd1"> female
+                                        <input type="radio" name="rd1"> other
+
+            <label for="cb1">HOBBIES</label>:          
+                                        <input type="checkbox" name="cb1"> MOVIE
+                                        <input type="checkbox" name="cb2"> SPORTS
+                                        <input type="checkbox" name="cb3"> TRAVEL
+            
+            <label for="department">DEPARTMENT</label>
+            <select name="department" required>
+                <option></option>
+                <option>ECE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+
+            <label for="feedback">FEEDBACK</label>
+            <textarea name="feedback" height="200px" width="200px"></textarea>
+
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="clear">
+        </pre>
+        
+        <!-- <button>SUBMIT</button> -->
+
+    </form>
+
